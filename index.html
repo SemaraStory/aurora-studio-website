@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aurora Studio — agensi kreatif digital yang menciptakan pengalaman web modern, elegan, dan imersif." />
+  <meta name="keywords" content="creative agency, web design, modern website, aurora studio" />
+  <meta name="author" content="Aurora Studio" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <title>Aurora Studio — Creative Digital Agency</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__orb"></div>
+      <p class="preloader__text">Aurora</p>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <nav class="nav__container">
+      <a href="#home" class="nav__logo" aria-label="Aurora Studio Home">
+        <span class="nav__logo-dot"></span>
+        <span class="nav__logo-text">Aurora<span class="accent">.</span></span>
+      </a>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#works" class="nav__link">Works</a></li>
+        <li><a href="#testimonials" class="nav__link">Clients</a></li>
+        <li><a href="#faq" class="nav__link">FAQ</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero__orbs" aria-hidden="true">
+        <div class="orb orb--1"></div>
+        <div class="orb orb--2"></div>
+        <div class="orb orb--3"></div>
+      </div>
+
+      <div class="container hero__content">
+        <span class="badge reveal reveal--fade">
+          <span class="badge__dot"></span>
+          Tersedia untuk project 2026
+        </span>
+
+        <h1 class="hero__title reveal reveal--up">
+          Kami menciptakan<br />
+          <span class="gradient-text">pengalaman digital</span><br />
+          yang tak terlupakan.
+        </h1>
+
+        <p class="hero__subtitle reveal reveal--up reveal--delay-1">
+          Aurora Studio adalah agensi kreatif yang mendesain dan membangun
+          website, brand, dan produk digital untuk brand masa depan.
+        </p>
+
+        <div class="hero__actions reveal reveal--up reveal--delay-2">
+          <a href="#works" class="btn btn--primary magnetic" data-magnetic>
+            <span>Lihat Karya Kami</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost magnetic" data-magnetic>
+            Mulai Project
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__scroll reveal reveal--fade reveal--delay-3">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee" aria-label="Brand Partners">
+      <div class="marquee__track">
+        <div class="marquee__item">Nebula Labs</div>
+        <div class="marquee__item">✦</div>
+        <div class="marquee__item">Quantum Co.</div>
+        <div class="marquee__item">✦</div>
+        <div class="marquee__item">Orbit Studio</div>
+        <div class="marquee__item">✦</div>
+        <div class="marquee__item">Lumen</div>
+        <div class="marquee__item">✦</div>
+        <div class="marquee__item">Helix</div>
+        <div class="marquee__item">✦</div>
+        <div class="marquee__item">Polaris</div>
+        <div class="marquee__item">✦</div>
+        <div class="marquee__item">Nebula Labs</div>
+        <div class="marquee__item">✦</div>
+        <div class="marquee__item">Quantum Co.</div>
+        <div class="marquee__item">✦</div>
+        <div class="marquee__item">Orbit Studio</div>
+        <div class="marquee__item">✦</div>
+        <div class="marquee__item">Lumen</div>
+        <div class="marquee__item">✦</div>
+        <div class="marquee__item">Helix</div>
+        <div class="marquee__item">✦</div>
+        <div class="marquee__item">Polaris</div>
+        <div class="marquee__item">✦</div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="container stats__grid">
+        <div class="stat reveal reveal--up">
+          <div class="stat__number" data-counter="120">0</div>
+          <div class="stat__label">Project Selesai</div>
+        </div>
+        <div class="stat reveal reveal--up reveal--delay-1">
+          <div class="stat__number" data-counter="48">0</div>
+          <div class="stat__label">Klien Global</div>
+        </div>
+        <div class="stat reveal reveal--up reveal--delay-2">
+          <div class="stat__number" data-counter="15">0</div>
+          <div class="stat__label">Penghargaan</div>
+        </div>
+        <div class="stat reveal reveal--up reveal--delay-3">
+          <div class="stat__number" data-counter="8" data-suffix=" thn">0</div>
+          <div class="stat__label">Pengalaman</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section__head reveal reveal--up">
+          <span class="section__tag">01 — Services</span>
+          <h2 class="section__title">Apa yang kami <span class="gradient-text">ciptakan</span></h2>
+          <p class="section__subtitle">
+            Kami menggabungkan strategi, desain, dan teknologi untuk menciptakan
+            produk digital yang berdampak.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card reveal reveal--up" data-tilt>
+            <div class="service-card__number">01</div>
+            <div class="service-card__icon">🎨</div>
+            <h3 class="service-card__title">UI / UX Design</h3>
+            <p class="service-card__desc">
+              Merancang antarmuka yang intuitif, elegan, dan berpusat pada pengguna.
+            </p>
+            <ul class="service-card__list">
+              <li>Research & Strategy</li>
+              <li>Wireframe & Prototype</li>
+              <li>Design System</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal reveal--up reveal--delay-1" data-tilt>
+            <div class="service-card__number">02</div>
+            <div class="service-card__icon">⚡</div>
+            <h3 class="service-card__title">Web Development</h3>
+            <p class="service-card__desc">
+              Membangun website cepat, scalable, dan SEO-friendly dengan teknologi modern.
+            </p>
+            <ul class="service-card__list">
+              <li>React / Next.js</li>
+              <li>Headless CMS</li>
+              <li>Performance Optimization</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal reveal--up reveal--delay-2" data-tilt>
+            <div class="service-card__number">03</div>
+            <div class="service-card__icon">✨</div>
+            <h3 class="service-card__title">Brand Identity</h3>
+            <p class="service-card__desc">
+              Membangun identitas brand yang konsisten, berkarakter, dan mudah dikenali.
+            </p>
+            <ul class="service-card__list">
+              <li>Logo & Mark</li>
+              <li>Visual Language</li>
+              <li>Brand Guidelines</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal reveal--up reveal--delay-3" data-tilt>
+            <div class="service-card__number">04</div>
+            <div class="service-card__icon">📱</div>
+            <h3 class="service-card__title">Motion & Interactive</h3>
+            <p class="service-card__desc">
+              Animasi dan interaksi yang memperkaya cerita dan meningkatkan pengalaman.
+            </p>
+            <ul class="service-card__list">
+              <li>Web Animations</li>
+              <li>3D & WebGL</li>
+              <li>Micro-interactions</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section class="works" id="works">
+      <div class="container">
+        <div class="section__head reveal reveal--up">
+          <span class="section__tag">02 — Selected Works</span>
+          <h2 class="section__title">Project <span class="gradient-text">terbaru</span> kami</h2>
+        </div>
+
+        <div class="works__grid">
+          <a href="#" class="work-card reveal reveal--up">
+            <div class="work-card__image work-card__image--1"></div>
+            <div class="work-card__info">
+              <span class="work-card__category">Web Design · 2026</span>
+              <h3 class="work-card__title">Nebula Finance Platform</h3>
+            </div>
+          </a>
+          <a href="#" class="work-card reveal reveal--up reveal--delay-1">
+            <div class="work-card__image work-card__image--2"></div>
+            <div class="work-card__info">
+              <span class="work-card__category">Branding · 2025</span>
+              <h3 class="work-card__title">Orbit Fashion Identity</h3>
+            </div>
+          </a>
+          <a href="#" class="work-card reveal reveal--up reveal--delay-2">
+            <div class="work-card__image work-card__image--3"></div>
+            <div class="work-card__info">
+              <span class="work-card__category">App · 2025</span>
+              <h3 class="work-card__title">Lumen Meditation App</h3>
+            </div>
+          </a>
+          <a href="#" class="work-card reveal reveal--up reveal--delay-3">
+            <div class="work-card__image work-card__image--4"></div>
+            <div class="work-card__info">
+              <span class="work-card__category">E-commerce · 2024</span>
+              <h3 class="work-card__title">Helix Sneaker Store</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section__head reveal reveal--up">
+          <span class="section__tag">03 — Testimonials</span>
+          <h2 class="section__title">Apa kata <span class="gradient-text">klien</span> kami</h2>
+        </div>
+
+        <div class="slider reveal reveal--up">
+          <div class="slider__track" id="sliderTrack">
+            <div class="slide">
+              <p class="slide__quote">“Tim Aurora benar-benar mengerti visi kami. Hasilnya melampaui ekspektasi — website kami sekarang jadi rujukan industri.”</p>
+              <div class="slide__author">
+                <div class="slide__avatar" style="background: linear-gradient(135deg, #7c3aed, #ec4899);">SR</div>
+                <div>
+                  <div class="slide__name">Sarah Ramirez</div>
+                  <div class="slide__role">CEO, Nebula Labs</div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <p class="slide__quote">“Prosesnya profesional, komunikasinya jernih, dan desain yang dihasilkan sangat premium. Kami akan kembali lagi untuk project selanjutnya.”</p>
+              <div class="slide__author">
+                <div class="slide__avatar" style="background: linear-gradient(135deg, #22d3ee, #7c3aed);">DK</div>
+                <div>
+                  <div class="slide__name">Dimas Kusuma</div>
+                  <div class="slide__role">Founder, Orbit Studio</div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <p class="slide__quote">“Kolaborasi terbaik yang pernah kami alami. Aurora mengubah brand kami dari sekadar logo menjadi pengalaman yang hidup.”</p>
+              <div class="slide__author">
+                <div class="slide__avatar" style="background: linear-gradient(135deg, #ec4899, #22d3ee);">AN</div>
+                <div>
+                  <div class="slide__name">Amelia Nakamura</div>
+                  <div class="slide__role">CMO, Lumen</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider__controls">
+            <button class="slider__btn" id="sliderPrev" aria-label="Previous">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+              </svg>
+            </button>
+            <div class="slider__dots" id="sliderDots"></div>
+            <button class="slider__btn" id="sliderNext" aria-label="Next">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section__head reveal reveal--up">
+          <span class="section__tag">04 — FAQ</span>
+          <h2 class="section__title">Pertanyaan yang sering <span class="gradient-text">ditanyakan</span></h2>
+        </div>
+
+        <div class="faq__list reveal reveal--up">
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>Berapa lama waktu pengerjaan project?</span>
+              <span class="faq__icon">+</span>
+            </summary>
+            <div class="faq__answer">
+              <p>Rata-rata project website memakan waktu 4-8 minggu, tergantung kompleksitas. Kami akan memberikan timeline jelas setelah diskusi kebutuhan di awal.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>Apakah bisa untuk project skala kecil?</span>
+              <span class="faq__icon">+</span>
+            </summary>
+            <div class="faq__answer">
+              <p>Tentu! Kami menerima project dari landing page single-page hingga platform enterprise. Setiap project mendapat perhatian yang sama.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>Bagaimana sistem pembayarannya?</span>
+              <span class="faq__icon">+</span>
+            </summary>
+            <div class="faq__answer">
+              <p>Kami menggunakan sistem milestone: 30% DP, 40% setelah desain disetujui, 30% saat peluncuran. Semua tercatat jelas di kontrak.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>Apakah ada support setelah website live?</span>
+              <span class="faq__icon">+</span>
+            </summary>
+            <div class="faq__answer">
+              <p>Ya, kami menyediakan maintenance 3 bulan gratis. Setelah itu ada paket maintenance bulanan sesuai kebutuhan klien.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>Bisakah saya melihat progress selama pengerjaan?</span>
+              <span class="faq__icon">+</span>
+            </summary>
+            <div class="faq__answer">
+              <p>Tentu. Kami menggunakan tool kolaborasi seperti Figma dan Notion, serta weekly meeting rutin agar klien selalu update.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / CTA -->
+    <section class="cta" id="contact">
+      <div class="container cta__inner reveal reveal--up">
+        <h2 class="cta__title">
+          Mari wujudkan ide <span class="gradient-text">brilian</span> Anda.
+        </h2>
+        <p class="cta__subtitle">
+          Ceritakan project Anda. Kami akan merespons dalam 24 jam.
+        </p>
+
+        <form class="form" id="contactForm" novalidate>
+          <div class="form__group">
+            <input type="text" id="name" name="name" placeholder=" " required />
+            <label for="name">Nama Anda</label>
+            <span class="form__error"></span>
+          </div>
+          <div class="form__group">
+            <input type="email" id="email" name="email" placeholder=" " required />
+            <label for="email">Email</label>
+            <span class="form__error"></span>
+          </div>
+          <div class="form__group form__group--full">
+            <textarea id="message" name="message" placeholder=" " rows="4" required></textarea>
+            <label for="message">Ceritakan project Anda</label>
+            <span class="form__error"></span>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg magnetic" data-magnetic>
+            <span>Kirim Pesan</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+          <p class="form__success" id="formSuccess">✓ Pesan berhasil dikirim! Kami akan segera menghubungi Anda.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#home" class="nav__logo">
+          <span class="nav__logo-dot"></span>
+          <span class="nav__logo-text">Aurora<span class="accent">.</span></span>
+        </a>
+        <p>Creative digital agency berbasis di Bali, bekerja dengan klien global.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Dribbble">Dr</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Kontak</h4>
+        <ul>
+          <li><a href="mailto:hello@aurora.studio">hello@aurora.studio</a></li>
+          <li><a href="tel:+6281234567890">+62 812 3456 7890</a></li>
+          <li>Bali, Indonesia</li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Newsletter</h4>
+        <p class="footer__newsletter-text">Dapatkan insight desain setiap bulan.</p>
+        <form class="footer__newsletter">
+          <input type="email" placeholder="Email Anda" required />
+          <button type="submit" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© 2026 Aurora Studio. Semua hak dilindungi.</p>
+        <p>Dibuat dengan ❤️ oleh Ari</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
